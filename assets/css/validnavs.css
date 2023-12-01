@@ -432,6 +432,7 @@ nav.navbar.validnavs .navbar-toggle {
   border: none;
   font-size: 25px;
   padding: 30px 0;
+  color: #000;
 }
 
 nav.navbar.validnavs .navbar-toggle i {
@@ -2475,6 +2476,30 @@ nav.navbar.validnavs.brand-center {
 }
 
 @media (max-width: 550px) {
+  .flex {
+    display: flex !important;
+  }
+
+  .user-data-mob {
+    display: block !important;
+  }
+
+  .user-img img {
+    width: 50px; /* Sesuaikan lebar gambar sesuai kebutuhan */
+    height: 50px; /* Sesuaikan tinggi gambar sesuai kebutuhan */
+    border-radius: 50%; /* Untuk gambar bundar */
+  }
+
+  .user-info {
+    margin-left: 10px; /* Sesuaikan jarak dari gambar */
+    display: flex;
+    display: block !important;
+  }
+
+  nav.navbar .user-data {
+    display: none;
+  }
+
   .attr-right {
     display: none !important;
   }

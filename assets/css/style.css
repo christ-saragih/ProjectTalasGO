@@ -331,6 +331,7 @@ h2 {
 
 h3 {
   font-size: 27px;
+  margin-bottom: 0;
 }
 
 h4 {
@@ -3871,12 +3872,23 @@ nav.navbar.validnavs.inc-shape::after {
   margin: 0;
 }
 
+/* apa yang kamu dapatkan disini */
+.check-solid-list h5 {
+  margin-bottom: 15px;
+}
+.check-solid-list .icon {
+  width: 22.5px; /* Atur lebar ikon sesuai yang Anda inginkan */
+  height: 20px; /* Atur tinggi ikon sesuai yang Anda inginkan */
+  margin-right: 15px;
+  color: var(--color-primary);
+}
+
 .check-solid-list li {
-  position: relative;
+  display: flex;
   z-index: 1;
   line-height: 2;
-  font-weight: 800;
-  padding-left: 25px;
+  font-weight: 500;
+  padding-left: 20px;
 }
 
 .check-solid-list li::after {
@@ -4902,18 +4914,18 @@ p {
 }
 
 .farmer-style-one-item .info {
-  display: inline-block;
-  float: right;
   margin-top: 24px;
 }
 
 .farmer-style-one-item .info h4 {
   margin: 0;
+  text-align: center;
 }
 
 .farmer-style-one-item .info span {
   font-size: 14px;
   font-weight: 600;
+  text-align: center;
 }
 
 .farmer-style-one-item .thumb .social > i {
@@ -4991,20 +5003,8 @@ p {
   transform: translateY(0) rotate(0);
 }
 
-.farmer-style-one-item .thumb .social li.facebook a {
-  background: #3b5998 none repeat scroll 0 0;
-}
-
-.farmer-style-one-item .thumb .social li.twitter a {
-  background: #1da1f2 none repeat scroll 0 0;
-}
-
-.farmer-style-one-item .thumb .social li.pinterest a {
-  background: #bd081c none repeat scroll 0 0;
-}
-
-.farmer-style-one-item .thumb .social li.g-plus a {
-  background: #db4437 none repeat scroll 0 0;
+.farmer-style-one-item .thumb .social li.whatsapp a {
+  background: #128c7e none repeat scroll 0 0;
 }
 
 .farmer-style-one-item .thumb .social li.linkedin a {
@@ -7818,4 +7818,28 @@ footer {
 /* CSS */
 .no-cursor {
   pointer-events: none;
+}
+
+.user-data {
+  display: flex;
+  gap: 10px;
+}
+.welcome {
+  font-size: 20px;
+}
+.user-data .user-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user-data .user-info .username {
+  font-size: 17px;
+}
+
+/* membuat list menjadi disabled */
+li.disabled {
+  pointer-events: none; /* Menonaktifkan interaksi mouse */
+  opacity: 0.6; /* Memberikan efek transparansi */
+  cursor: not-allowed; /* Mengubah kursor menjadi not-allowed */
 }
